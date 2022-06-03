@@ -27,7 +27,7 @@ if (n <= 5.0)
 if (n == 0.0)
 	printf("Last digit of %d is the string and is 0\n", n);
 else
-	printf(Last digit of "%d is the string and is less than 6 and not 0\n", n);
+	printf("Last digit of %d is the string and is less than 6 and not 0\n", n);
 
 }
 
