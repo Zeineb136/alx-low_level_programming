@@ -1,5 +1,5 @@
-#ifnder _main_h_
-#define _main_h_
+#ifndef main_h
+#define main_h
 
 int _putchar(char c);
 int main(void);
