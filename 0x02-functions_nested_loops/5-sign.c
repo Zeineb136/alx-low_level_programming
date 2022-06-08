@@ -11,7 +11,7 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar ('+');
+		printf ('+');
 		putchar ('\n');
 		return (1);
 	}
