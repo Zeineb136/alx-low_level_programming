@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 
-int _puchar(char);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
