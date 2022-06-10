@@ -10,19 +10,11 @@
 
 void print_line(int n)
 {
-	char symb = '_';
-	int n, i;
+	int start = 1;
 
-	if (n >= 0)
+	while (start <= n)
 	{
-	for (i = 0; i >= n; i++)
-	{
-		_putchar (symb);
+		_putchar (95);
 	}
 	_putchar ('\n');
-	}
-	else
-	{
-		_putchar ('\n');
-	}
 }
