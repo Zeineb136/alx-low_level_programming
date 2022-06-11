@@ -3,7 +3,7 @@
 /**
 *main -prints the largest prime factor of the number.
 *
-*Return :largest prime factor.
+*Return:0.
 */
 
 int main(void)
@@ -14,21 +14,16 @@ int main(void)
 
 	long LPfactor = 0;
 
-	while (n != 0)
+	while (n != 1)
 	{
-		if (n % div != 0)
+		if (n % div == 0)
 		{
-			div = div + 1;
+			n = n : div;
+			LPfactor = div;
 		}
-		else
-		{
-		LPfactor = n
-		n = n / div;
-		if (n == 1)
-			{
-			printf("%d\n", PLfactor);
-			i = 1;
-			break;
-			}
-		}
+
+		div += 1;
 	}
+	printf("%d\n", PLfactor);
+	return (0);
+}
