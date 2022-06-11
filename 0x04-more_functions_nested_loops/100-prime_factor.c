@@ -8,25 +8,27 @@
 
 int main(void)
 {
-	long int n;
+	long n = 612852475143;
 
-	n = 612852475143;
+	long div = 2;
 
-	long int div = 2, i = 0, LPfactor;
+	long LPfactor = 0;
 
 	while (n != 0)
 	{
 		if (n % div != 0)
+		{
 			div = div + 1;
-	}
-	else
-	{
+		}
+		else
+		{
 		LPfactor = n
 		n = n / div;
 		if (n == 1)
-		{
+			{
 			printf("%d\n", PLfactor);
 			i = 1;
 			break;
+			}
 		}
 	}
