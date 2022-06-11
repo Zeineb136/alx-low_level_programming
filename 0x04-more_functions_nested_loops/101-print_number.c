@@ -15,10 +15,14 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar(45);
 		i = -i;
 	}
-	if (i > 10)
+	if (n <= 10)
+	{
+		putchar(i + '0')
+	}
+
+	else if (i > 10)
 	{
 		print_number(i / 10 + '0');
 	}
