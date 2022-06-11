@@ -12,18 +12,18 @@ int main(void)
 
 	long div = 2;
 
-	long LPfactor = 0;
+	long max = 0;
 
 	while (n != 1)
 	{
 		if (n % div == 0)
 		{
-			n = n : div;
-			LPfactor = div;
+			n = n /  div;
+			max = div;
 		}
 
 		div += 1;
 	}
-	printf("%d\n", PLfactor);
+	printf("%ld\n", max);
 	return (0);
 }
