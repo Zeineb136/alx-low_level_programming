@@ -9,7 +9,7 @@
 *Return: string in reverse
 */
 
-void puts2(char *str);
+void puts2(char *str)
 {
 	int size = 0;
 
