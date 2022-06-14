@@ -7,10 +7,10 @@
 *@a: pointer to the elements
 *@n: the number of elements of the array to be printed
 *
-*Return: elements of an array of integers 
+*Return: elements of an array of integers
 */
 
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
 
