@@ -11,21 +11,29 @@
 
 int _atoi(char *s)
 {
-	int a, b;
+	int i = 0;
+	int result = 0;
+	int puiss = 1;
 
-	a = 0;
-	b = 1;
-
-	while (('-' == (*s)) || ((*s) == '+'))
+	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 	{
-		if (*s == '-')
-			b = b * -1;
-		s++;
+		if (s[i] == '-')
+			puiss = puiss * -1;
+		i++;
 	}
-	while ((*s >= '0') && (*s <= '9'))
+	while ((s[i] >= '0') && (*s <= '9') && s[i] != 0)
 	{
-		a = (a * 10) + ((*s) - '0');
-		s++;
+		if (result >= 0)
+		{
+			result = result * 10 - (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			result = result * 10 - (s[i] - '0');
+			i++;
+		}
 	}
-	return (a * b);
+	puiss = puiss * -1;
+	return (result * puiss);
 }
