@@ -12,24 +12,23 @@ char *leet(char *str)
 {
 	int i, j;
 
-	char c[] = "aAeEoOtTlL";
-	char num[] = "4433007711";
+	char up[] = "AELOT";
+	char low[] = "aelot";
+	char num[] = "01347";
 
 	i = 0;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-	j = 0;
 
-	while (c[j] != '\0')
-	{
-		if (str[i] == c[j])
+		for (j = 0; low[j] != '\0'; j++)
 		{
-			str[i] = num[i];
+			if (str[i] == up[j] || str[i] == low[j])
+			{
+				str[i] = num[j];
+				break;
+			}
 		}
-		j++;
-	}
-	i++;
 	}
 	return (str);
 }
