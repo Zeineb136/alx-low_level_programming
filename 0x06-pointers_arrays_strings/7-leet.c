@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	char up[] = "AELOT";
 	char low[] = "aelot";
-	char num[] = "01347";
+	char num[] = "43107";
 
 	i = 0;
 
