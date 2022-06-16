@@ -21,7 +21,7 @@ char *cap_string(char *str)
 
 	if (i == 0 && str[i] >= 97 && str[i] <= 122)
 	{
-		str[i] = str[i] - 32
+		str[i] = str[i] - 32;
 	}
 	j = 0;
 	while (c[j] != '0')
@@ -32,7 +32,7 @@ char *cap_string(char *str)
 	}
 	j++;
 	}
-	i++
+	i++;
 
 	}
 	return (str);
