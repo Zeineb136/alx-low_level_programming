@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+*rot13 -function that encodes a string using rot13.
+*@str: string
+*
+*Return: string of number
+*
+*/
+
+char *rot13(char *str)
+{
+	int i, j;
+
+	char alph[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	i = 0;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+
+		for (j = 0; alph[j] != '\0'; j++)
+		{
+			if (str[i] == alph[j])
+			{
+				str[i] = rot13[j];
+				break;
+			}
+		}
+	}
+	return (str);
+}
