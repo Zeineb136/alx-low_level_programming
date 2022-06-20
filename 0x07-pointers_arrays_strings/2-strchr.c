@@ -23,12 +23,9 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			_putchar (i + '0');
-		}
-		else
-		{
-			_putchar (0 + '0');
+			return (s + i);
 		}
 	}
+	return ('\0');
 }
 
