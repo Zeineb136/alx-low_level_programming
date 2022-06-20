@@ -21,10 +21,10 @@ unsigned int _strspn(char *s, char *accept)
 
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i + j] == accept[j])
+			if (s[i] == accept[j])
 				max_i++;
 
-			if (s[i + j] != accept[j])
+			if (s[i] != accept[j])
 				if (max_i > maxi)
 					maxi = max_i;
 		}
