@@ -13,17 +13,23 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 
+	int maxi = 0;
+
 	for  (i = 0; s[i] != '\0'; i++)
 	{
+		int max_i = 0;
+
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j])
-				break;
-			if (s[i] != accept[j])
-				break;
+			if (s[i + j] == accept[j])
+				max_i++;
+
+			if (s[i + j] != accept[j])
+				if (max_i > maxi)
+					maxi = max_i;
 		}
 	}
 
-	return (i);
+	return (maxi);
 }
 
