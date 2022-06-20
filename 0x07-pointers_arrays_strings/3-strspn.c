@@ -17,16 +17,14 @@ unsigned int _strspn(char *s, char *accept)
 
 	for  (i = 0; s[i] != '\0'; i++)
 	{
-		int max_i = 0;
-
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 				maxi++;
 
-			if (s[i] != accept[j])
-				if (max_i >= maxi)
-					maxi = max_i;
+			if (s[i] == ' ')
+				break;
+
 		}
 	}
 
