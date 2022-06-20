@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				maxi++;
 
 			if (s[i] != accept[j])
-				if (max_i > maxi)
+				if (max_i >= maxi)
 					maxi = max_i;
 		}
 	}
