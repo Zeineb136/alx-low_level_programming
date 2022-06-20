@@ -21,11 +21,10 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[j] == s[i])
 				maxi++;
-
+		}
 			if (s[i] == ' ')
 				break;
 
-		}
 	}
 
 	return (maxi);
