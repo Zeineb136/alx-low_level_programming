@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*main -prints the number of argument
+*main -prints all arguments
 *
 *@argc: number of arguments passed to the function
 *@argv:argument vector
@@ -16,9 +16,8 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("%s", *argv[i]);
+		printf("%s\n", argv[i]);
 	}
-	printf("\n");
 	return (0);
 }
 
