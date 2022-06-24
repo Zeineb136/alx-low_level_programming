@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*main -prints the number of arguments 
+*main -prints the number of argument
 *
 *@argc: number of arguments passed to the function
 *@argv:argument vector
@@ -13,6 +13,6 @@
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	printf("%s\n", *argv);
-	return 0;
+	return (0);
 }
 
