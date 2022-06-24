@@ -11,7 +11,9 @@
 
 int is_palindrome(char *s)
 {
-	return (match(s, s + length(s) - 1));
+	int L = length(s);
+
+	return (match(s, s + L - 1));
 }
 
 /**
