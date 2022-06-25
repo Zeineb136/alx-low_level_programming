@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-*main -prints all arguments
+*main -multiplies two numbers
 *
 *@argc: number of arguments passed to the function
 *@argv:argument vector
