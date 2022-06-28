@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i, j;
+	unsigned int j, i = 0;
 
 	char *str2;
 
