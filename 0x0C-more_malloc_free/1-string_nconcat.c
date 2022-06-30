@@ -35,8 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			strnew[k] = s1[k];
 		else
 			strnew[k] = s2[k - i];
-	
-		
 	strnew[k] = '\0';
 	return (strnew);
 }
