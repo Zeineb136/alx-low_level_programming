@@ -1,5 +1,5 @@
-#ifndef absolute_value
-#define absolute_value
+#ifndef ABSOLUTE_VALUE
+#define ABSOLUTE_VALUE
 #define ABS(x) ((x < 0) ? (-x) : (x))
 
 #endif
