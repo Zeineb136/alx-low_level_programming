@@ -5,4 +5,4 @@
 
 void print_name(char *name, void (*f)(char *));
 
-#endif 
+#endif /* _FUNCTION_POINTERS_H_ */ 
