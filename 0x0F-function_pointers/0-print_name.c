@@ -5,7 +5,6 @@
 *@name: name of the person
 *@f: function
 *
-*Return: nothing
 */
 void print_name(char *name, void (*f)(char *))
 {
@@ -13,6 +12,4 @@ void print_name(char *name, void (*f)(char *))
 	{
 		f(name);
 	}
-	else 
-		return;
 }
