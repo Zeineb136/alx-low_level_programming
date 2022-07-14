@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stddef.h> 
 
 /**
 *print_list - function that prints all the elements of a list
@@ -13,17 +14,21 @@ size_t print_list(const list_t *h)
 {
 	int len = 1; 
 
-	if ( h == NULL || str == NULL)
+	if ( h == NULL )
 	{
-		printf("[0] (nil)");
 		return (0);
 	}
-
-	list_t temp* = h;
-	while (temp->next != NULL)
+	else 
 	{
-		len++;
-		temp = temp->next;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+
+		while (h->next != NULL)
+		{
+			printf("[%d] World\n", len);
+			h = h->next;
+			len++;
+		}
 	}
 	return (len);
 }
