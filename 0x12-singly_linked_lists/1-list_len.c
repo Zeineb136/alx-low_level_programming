@@ -5,23 +5,22 @@
 *list_len - function that returns the number of elements in a linked list_t
 *@h: pointer to the head
 *
-*Return: the number of nodes.
+*Return:  number of elements in a linked list
 */
 
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
-	int len = 1;
+	int len = 0;
 
 	if (h == NULL)
 	{
 		return (0);
 	}
-	list_t *temp = h;
 
-	while (temp->next != 0)
+	while (h != NULL)
+	{
 		len++;
-		temp = temp->next
-		}
+		h = h->next;
 	}
 	return (len);
 }
