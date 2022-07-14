@@ -12,7 +12,7 @@
 
 size_t print_list(const list_t *h)
 {
-	int len = 1; 
+	int len = 0; 
 
 	if ( h == NULL )
 	{
@@ -20,12 +20,14 @@ size_t print_list(const list_t *h)
 	}
 	else 
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-
-		while (h->next != NULL)
+		while (h != NULL)
 		{
-			printf("[%d] World\n", len);
+			if (h->str ==NULL)
+				printf("[0] (nil)\n");
+			else
+			{	
+				printf("[%d] %s\n", len, h->str);
+			}	
 			h = h->next;
 			len++;
 		}
