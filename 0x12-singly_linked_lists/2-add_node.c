@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 /**
 *add_node - function that adds a new node at the beginning of a list
 *@head: head of the linked list.
@@ -11,7 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	int i, cout;
+	int i;
 
 	list_t *first_node;
 
@@ -19,13 +20,13 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (0);
 	}
-	first_node = (list_t *) malloc(sizeof(list_t));
+	first_node = malloc(sizeof(list_t));
+	first_node->str = strdup(str);
 
 	for (i = 0; str[i] != '\0'; i++)
-		return (i);
+		;
 
 	first_node->len  = i;
-	first_node->str = strdup(str);
 	first_node->next = *head;
 
 	*head = first_node;
